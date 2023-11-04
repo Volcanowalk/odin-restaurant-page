@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'New Garden Light';
+    src: url('./fonts/NewGardenLight-r0BK.otf');
+}
+
+body, html {
+    height: 100%;
+    margin: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 150px 7fr;
+    grid-template-columns: 1fr 3fr 1fr;
+    background-image: url("./images/sebastian-unrau-sp-p7uuT0tw-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* header */
+.div-header {
+    text-align: center;
+    background-color: #3A4D39;
+    grid-column: 1 / 4;
+}
+
+h1 {
+    font-family: 'New Garden Light', Arial;
+    font-size: 3rem;
+    color: white;
+}
+
+/* Nav bar */
+.div-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #4F6F52;
+}
+
+button {
+    font-size: 1.5rem;
+    background-color: #ECE3CE;
+}
+
+button:hover {
+    background-color: #739072;
+    color: white;
+    border-color: white;
+}
+
+/* Main */
+ .div-main {
+    grid-column: 2 / 3;
+    background-color: #739072;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #739072;
+ }
+
+ /* Home */
+
+ .txtGreeting {
+    text-align: center;
+    font-family: 'New Garden Light', Arial;
+    font-size: 3rem;
+    color: white;
+ }
+
+ .txtDetail {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 2rem;
+    color: white;
+ }
+
+ /* Menu */
+ .div-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    gap: 70px;
+ }
+
+ .menu-item {
+    display: grid;
+    justify-items: center;
+ }
+
+ .menu-item img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+ }
+
+ .menu-item div{
+    font-size: 3rem;
+    color: white;
+    font-family: 'New Garden Light', Arial;
+    text-align: center;
+ }
+
+ /* Contact */
+ .div-contact img {
+    width: 300px;
+    border-radius: 50%;
+ }
+
+ .div-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    gap: 20px;
+ }
+
+ .div-contact p {
+    font-size: 2rem;
+    color: white;
+ }
