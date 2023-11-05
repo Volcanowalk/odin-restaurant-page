@@ -42,11 +42,14 @@ h1 {
     justify-content: center;
     gap: 20px;
     background-color: #4F6F52;
+    height: 50px;
 }
 
 button {
     font-size: 1.5rem;
     background-color: #ECE3CE;
+    transition: 0.3s;
+    border-radius: 20px;
 }
 
 button:hover {
@@ -72,6 +75,7 @@ button:hover {
     font-family: 'New Garden Light', Arial;
     font-size: 3rem;
     color: white;
+    animation: fadeIn 1s;
  }
 
  .txtDetail {
@@ -80,6 +84,7 @@ button:hover {
     margin-right: 20px;
     font-size: 2rem;
     color: white;
+    animation: fadeIn 1s;
  }
 
  /* Menu */
@@ -89,6 +94,7 @@ button:hover {
     align-items: center;
     margin-top: 30px;
     gap: 70px;
+    animation: fadeIn 1s;
  }
 
  .menu-item {
@@ -123,9 +129,22 @@ button:hover {
     align-items: center;
     margin-top: 50px;
     gap: 20px;
+    animation: fadeIn 1s;
  }
 
  .div-contact p {
     font-size: 2rem;
     color: white;
+ }
+
+
+ /* Keyframes */
+
+ @keyframes fadeIn {
+   from {
+      opacity: 0;
+   }
+   to {
+      opacity: 1;
+   }
  }
